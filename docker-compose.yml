@@ -1,7 +1,7 @@
 version: '2'
 services:
   sa_user_ss_db:
-    image: mysql
+    image: mysql:5.7
     ports:
       - "3310:3306"
     environment:
@@ -17,4 +17,3 @@ services:
       - "3010:3000"
     depends_on:
       - sa_user_ss_db
-      
