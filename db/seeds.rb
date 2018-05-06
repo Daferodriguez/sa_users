@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #Seeds for Users
 
+User.destroy_all
+
 User.create(firstname: "David", lastname: "Rodriguez", email:"dafrodriguezro@gmail.com", account: 1)
 puts "Creado usuario 1"
 User.create(firstname: "Pepe", lastname: "Rodriguez", email:"perodriguez@gmail.com", account: 2)
